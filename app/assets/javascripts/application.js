@@ -1,0 +1,10 @@
+//= require juggernaut
+//= require jquery
+//= require jquery-ui
+//= require soundcloud.player.api
+//= require ./libs/jquery-jsonp
+//= require ./libs/jquery.jplayer
+//= require ./libs/jQuery.tubeplayer
+//= require ./libs/sc-player
+//= require jquery.simplyscroll
+//= require ishlist

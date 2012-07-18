@@ -1,0 +1,57 @@
+<%= stylesheet_link_tag "dilly" %>
+
+<div id="background_dilly_yo"></div>
+<div id="close_button_dilly_yo"></div>
+
+<div id="dilly_player">
+  <div id="player"></div>
+</div>
+
+<div id="dilly_ad_killer"></div>
+<div id="over_dilly_player" onmouseover="mouse_over_check_video_state()" onmouseout="mouse_out_check_video_state()">
+  <div id="dilly_play_button"></div>
+  <div id="dilly_pause_button"></div>
+</div>
+<script>
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "http://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var done = false;
+    var player;
+    var count = 0;
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+          height: '350',
+          width: '390',
+          autoplay: false,
+          allowFullScreen: "false",
+          videoId: '37dw2r45Xzg',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+    }
+    function onPlayerReady(evt) {
+        //evt.target.playVideo();
+        if (count==0)
+          $('#player').attr('src', $('#player').attr('src') + "&wmode=opaque");
+        count = 1;
+    }
+    function onPlayerStateChange(evt) {
+        //if (evt.data == YT.PlayerState.PLAYING && !done) {
+        //    setTimeout(stopVideo, 6000);
+        //    done = true;
+        //}
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('#player').attr('src', $('#player').attr('src') + "&wmode=opaque");
+    });
+</script>

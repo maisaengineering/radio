@@ -1,0 +1,130 @@
+
+
+#background_search{
+background-image:url("background_search.png");
+position:relative;
+margin-top:-1000px;
+width:923px;
+height:867px;
+}
+
+#background_search_copy{
+background-image: url("background_copy_2.png");
+position: absolute;
+top: 235px;
+left: 276px;
+width: 369px;
+height: 366px;
+z-index: 3 !important;
+}
+
+#blank_torn_paper_search{
+background-image: url("background_torn_paper.png");
+position: absolute;
+top: 20px;
+left: 115px;
+width: 638px;
+height: 770px;
+z-index: 5 !important;
+}
+
+#mid_of_record_hole_search
+{
+background-image: url("mid_of_record_hole_copy.png");
+position: absolute;
+top: 402px;
+left: 446px;
+width: 36px;
+height: 38px;
+z-index: 4 !important;
+}
+
+#close_button_search
+{
+background-image: url("close_button.png");
+position: absolute;
+top: 8px;
+left: 75.2%;
+width: 16px;
+height: 16px;
+z-index: 14 !important;
+}
+
+#logo_search_ish
+{
+background-image: url("logo_upload_songs.png");
+position: absolute;
+top: 45px;
+left: 585px;
+width: 146px;
+height: 59px;
+z-index: 6 !important;
+}
+
+#search_it_up
+{
+background-image: url("search_it_up.png");
+position: absolute;
+top: 95px;
+left: 365px;
+width: 180px;
+height: 26px;
+z-index: 6 !important;
+}
+
+#search_header
+{
+background-image: url("search_header.png");
+position: absolute;
+top: 164px;
+left: 275px;
+width: 397px;
+height: 48px;
+z-index: 6 !important;
+}
+
+#search_song
+{
+background-image: url("search_song.png");
+position: absolute;
+top: 255px;
+left: 235px;
+width: 67px;
+height: 17px;
+z-index: 6 !important;
+}
+
+#search_artist
+{
+background-image: url("search_artist.png");
+position: absolute;
+top: 315px;
+left: 235px;
+width: 78px;
+height: 17px;
+z-index: 6 !important;
+}
+
+#search_username
+{
+background-image: url("search_username.png");
+position: absolute;
+top: 375px;
+left: 235px;
+width: 116px;
+height: 18px;
+z-index: 6 !important;
+}
+#search_go
+{
+background-image: url("search_go.png");
+position: absolute;
+top: 445px;
+left: 418px;
+width: 86px;
+height: 44px;
+z-index: 6 !important;
+}
+
+
+

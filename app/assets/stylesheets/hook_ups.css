@@ -1,0 +1,32 @@
+#background_hook_ups
+{
+        background-image: url("background.png");
+        position: relative;
+        background-repeat:no-repeat;
+            background-attachment:absolute;
+        top: -120px;
+        left: 0%;
+        width: auto;
+        height:960px;
+        z-index: 2 !important;
+}
+#close_button_dilly_yo
+{
+        background-image: url("close_button_comment_activity.png");
+        position: absolute;
+        top: -92px;
+        left: 849px;
+        width: 15px;
+        height: 15px;
+        z-index: 12 !important;
+}
+#todays_entries
+{
+background-image: url("todays_entries.png");
+position: absolute;
+top: 685px;
+left: 415px;
+width: 145px;
+height: 25px;
+z-index: 6 !important;
+}

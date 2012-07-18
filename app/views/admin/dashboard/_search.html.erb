@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  var rails_env = '<%= Rails.env %>';
+</script>
+<div id="search_container">
+  <!--<div id="search_filters">
+    <%# ['title', 'artist', 'referrer'].each do |type| %>
+      <span class="search_type_group">
+        <%#= label_tag :search_type, type %><%#= radio_button_tag :search_type, type %>
+      </span>
+    <%# end %>
+    (referrer doesn't do anything yet)
+  </div>-->
+  <%= text_field_tag :search_query %>
+  <%= submit_tag "Search!", :id=>"search_submit" %>
+  <div id="search_results">
+  </div>
+</div>

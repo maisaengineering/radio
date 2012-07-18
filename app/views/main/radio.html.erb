@@ -1,0 +1,174 @@
+<div id="lil_heart"></div>
+<div id="by_1"></div>
+<div id="comment_class"></div>
+
+<div id="next_arrow"></div>
+<div id="previous_arrow"></div>
+
+<div onload="Picture('pop',4)" onMouseOver="Picture('pop',3)" onMouseOut="Picture('pop',4)">
+<div id="small_latest_chart"></div></div>
+<div id="pop"><img src="/assets/commentactivitypop.png"></div>
+
+<div id="comment_box">
+  <!--<form id="comment-form">-->
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"></input>
+  <input type="text" name="comment[comment]" id="comment-text" style="position: absolute; left: 88px;top: 7px;width: 276px;" onkeyup = 'post_new_comment()'/></input>
+  
+  
+  <div class="hider"><input type="submit" id="post-comment-btn"></input></div>
+  <!--</form>-->
+</div>
+
+<div id="yup_on_holler"></div>
+
+<div id="over_vinyl" class="over_player" ></div>
+
+<div id="station_label">
+  <img id="station_img" src="" />
+</div>
+
+<div id="registration_required_box">
+
+  <div id="new_user_1"></div>
+
+  <div id="login_1"></div>
+
+  <div id="logo_2_1"></div>
+
+  <div id="yes_no_box_copy_1"></div>
+
+  <div id="login_message"></div>
+</div>
+
+
+
+<div id="station"></div>
+<div id="my_ishlist"></div>
+<div id="mid_of_record_hole"></div>
+<div id="next_song_button" class="over_player"></div>
+<div id="previous_song_button" class="over_player"></div>
+<div id="play_button"  class="over_player" ></div>
+<div id="twitter_icon"  class="over_player"></div>
+<div id="fbook_icon"  class="over_player"></div>
+<script src='http://connect.facebook.net/en_US/all.js'></script>
+<div id="ish_circle" class="ish_rating alegraya_sc over_player"><%= @song_hash[:heard_before] %></div>
+
+<div onload="ShowPicture('Style',0)" onMouseOver="ShowPicture('Style',1)" onMouseOut="ShowPicture('Style',0)">
+<div id="ish_rating" class="over_player"></div></div>
+<div id="Style"><img src="/assets/ish_rating_popup.png"></div>
+
+<script type="text/javascript">
+  jQuery('.ish_rating').html("<%=@song_hash[:ish_rating]%>");
+</script>
+<div id="download_link" class="over_player"></div>
+<div class="star" id="star_1"></div>
+<div class="star" id="star_2"></div>
+<div class="star" id="star_3"></div>
+<div class="star" id="star_4"></div>
+<div class="star" id="star_5"></div>
+<div class="star" id="star_6"></div>
+<div class="star" id="star_7"></div>
+<div class="star" id="star_8"></div>
+<div class="star" id="star_9"></div>
+<div class="star" id="star_10"></div>
+<div id="rate_it"></div>
+<div id="ave_rating"><div id="avg_rating_text"></div></div>
+
+<div id="yes"></div>
+
+<div id="no"></div>
+
+<div id="heard_before"></div>
+<div id="heard"><div id="heard_text"></div></div>
+<div id="album_art_previous_overlay"></div>
+<div id="album_art_next_overlay"></div>
+<div id="share_a_track"></div>
+<div id="shared_by"><div id="user_sharer_text" class="impact"><%= @song_hash[:shared_by] %></div></div>
+<div id="user_picture" style="width:50px; height:50px;"><img id="user-img" src="<%= @song_hash[:user_picture] %>" /></div>
+<div id="blank_polaroid"></div>
+<div id="blank_polaroid_2"></div>
+<div id="logo"></div>
+<div id="who_s_online"></div>
+<div id="station_chat"></div>
+<div id="social_bar"></div>
+<div id="chat_icon"></div>
+<div id="background"></div>
+
+<div id="album_art_current">
+<img src="<%= @song_hash[:art] %>" id="album_img_current" />
+</div>
+<div id="station_up_arrow"></div>
+<div id="station_down_arrow"></div>
+<div id="album_art_future"><img src="<%= @song_hash[:future_art] %>" id="album_img_future" /></div>
+<div id="album_art_next">
+<img src="<%= @song_hash[:next_art] %>" id="album_img_next" />
+</div>
+<div id="album_title_next">
+<%= @song_hash[:next_title] %>
+</div>
+<div id="album_title_previous">
+<%= @song_hash[:previous_title] %>
+</div>
+<div id="artist_title_box" class="over_player">
+</div>
+<div id="artist_name" class="artist impact1 truecaps over_player"><%= @song_hash[:artist] %></div>
+<div id="title" class="title courier_new truecaps over_player"><%= @song_hash[:title] %></div>
+<div id="album_art_previous">
+<img src="<%= @song_hash[:previous_art] %>" id="album_img_previous" />
+</div>
+<div id="album_art_past">
+<img src="<%= @song_hash[:past_art] %>" id="album_img_past" />
+</div>
+<div id="album_art_past_cover"></div>
+<div id="album_art_future_cover"></div>
+<div id="behind_vinyl">
+<ul id="comment_scroller">
+</ul>
+</div>
+
+
+<div id="yt_ad_killer"></div>
+
+<div id="login_box">
+<%= render :partial => "devise/sessions/new" %>
+</div>
+
+<div id="registration_box">
+<%= render :partial => "devise/registrations/new" %>
+</div>
+
+
+<div class="hider">
+
+<div id="station_name_imgs">
+<% @stations.each do |s| %>
+<div id="<%= s.name.downcase.gsub(" ", "_") %>" name="<%= s.name %>" class="station hider"><% if s.station_name_image.exists? %><img src="<%= s.station_name_image.url %>" /><% end %></div>
+<% end %>
+</div>
+
+<div id="the_station">
+<%= select_tag('playlist', options_from_collection_for_select(@stations, 'name', 'name')) %>
+</div>
+
+<div id="variables">
+  <div id="player_type"><%= @song_hash[:type] %></div>
+  <div id="media_source_url"><%= @song_hash[:media_source_url] %></div>
+  <div id="download_url"><%= @song_hash[:download] %></div>
+  <div id="logged_in"><%= @song_hash[:logged_in] %></div>
+  <div id="current_song_id"><%= @song_hash[:id] %></div>
+  <div id="previous_song_id"><%= @song_hash[:previous_id] %></div>
+  <div id="next_song_id"><%= @song_hash[:next_id] %></div>
+  <div id="current_playlist"><%= @song_hash[:playlist] %></div>
+  <div id="current_user_id"><%= current_user ? current_user.id : "" %></div>
+</div>
+
+<div id="jplayer_container"></div>
+<div id="dialog_message"></div>
+
+</div>
+
+<div id="main_page_bottom_links"></div>
+<div id="the_dilly-yo"></div>
+<div id="the-hook-ups"></div>
+<div id="search_browse"></div>
+<div id="contact"></div>

@@ -1,0 +1,32 @@
+<%= stylesheet_link_tag "registrations" %>
+
+<form accept-charset="UTF-8" action="/users/register.json" class="new_user" enctype="multipart/form-data" id="register-form" method="post">
+  <input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <div id="small_logo_ish"></div>
+  <div id="submit_registration_button"></div>
+  <div id="new_school"></div>
+  <div id="fbconnectbutton" class="fbconnectbtn"></div>
+  <div id="profile_pic_button_upload_songs"></div>
+  <div id="preferred"></div>
+  <div id="or"></div>
+  <div id="registration_close_button"></div>
+  <div id="word_two_ways_to_get_the_party_started"></div>
+  <div id="old_school"></div>
+  <div id="username">
+  	<input id="user_username" name="user[username]" size="30" type="text" />
+  </div>
+  <div id="password">
+  	<input id="user_password_registrations" name="user[password]" size="30" type="password" />
+  </div>
+  <div id="email">
+  	<input id="user_email" name="user[email]" size="30" type="text" />
+  </div>
+  <div id="profile_pic"></div>
+  <p id="select_pic_file_text"></p>
+  <div id="background_registration"></div>
+  <div class="hider">
+    <input id="user_photo" name="user[photo]" type="file" />
+    <input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" />
+    <input id="sign_up" name="commit" type="submit" value="Sign up" />
+  </div>
+</form>

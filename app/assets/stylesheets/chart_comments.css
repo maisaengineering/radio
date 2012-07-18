@@ -1,0 +1,896 @@
+#background_chart
+{
+	background-image: url("background_2.png");
+	position: absolute;
+	top: -76px;
+	left: -130px;
+	width: 1804px;
+	height: 1172px;
+	z-index: 134;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #chart
+{
+	background-image: url("chart.png");
+	position: absolute;
+	top: 170px;
+	left: 494px;
+	width: 712px;
+	height: 673px;
+	z-index: 141;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #mask_on_holler
+{
+	background-image: url("comment_box.png");
+	position: absolute;
+	top: 64px;
+	left: 144px;
+	width: 424px;
+	height: 50px;
+	z-index: 135;
+	opacity: 0.5;
+	filter: alpha(opacity=45);
+}
+
+ #yup_on_holler
+{
+	background-image: url("yup_on_holler.png");
+	position: absolute;
+	top: 30px;
+	left: 390px;
+	width: 28px;
+	height: 15px;
+	z-index: 136;
+	opacity: 0.7;
+	filter: alpha(opacity=67);
+}
+
+ #yup
+{
+	background-image: url("yup.png");
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	width: 21px;
+	height: 8px;
+	z-index: 137;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #comment
+{
+	background-image: url("comment.png");
+	position: absolute;
+	top: 8px;
+	left: 7px;
+	width: 86px;
+	height: 15px;
+	z-index: 138;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #139
+{
+	background-image: url("139.png");
+	position: absolute;
+	top: 22px;
+	left: 94px;
+	width: 323px;
+	height: 2px;
+	z-index: 139;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #1
+{
+	background-image: url("1.png");
+	position: absolute;
+	top: 42px;
+	left: 11px;
+	width: 373px;
+	height: 3px;
+	z-index: 140;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #b_copy_3
+{
+	background-image: url("b_copy_3.png");
+	position: absolute;
+	top: 621px;
+	left: 550px;
+	width: 130px;
+	height: 24px;
+	z-index: 142;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #more
+{
+	background-image: url("more.png");
+	position: absolute;
+	top: 624px;
+	left: 419px;
+	width: 44px;
+	height: 16px;
+	z-index: 143;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #the_latest_on
+{
+	background-image: url("the_latest_on.png");
+	position: absolute;
+	top: 184px;
+	left: 86px;
+	width: 130px;
+	height: 12px;
+	z-index: 144;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #145
+{
+	background-image: url("145.png");
+	position: absolute;
+	top: 184px;
+	left: 220px;
+	width: 4px;
+	height: 11px;
+	z-index: 145;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #to_greener_pastures
+{
+	background-image: url("to_greener_pastures.png");
+	position: absolute;
+	top: 181px;
+	left: 234px;
+	width: 173px;
+	height: 13px;
+	z-index: 146;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #the_grouch_and_eligh
+{
+	background-image: url("the_grouch_and_eligh.png");
+	position: absolute;
+	top: 176px;
+	left: 444px;
+	width: 128px;
+	height: 20px;
+	z-index: 147;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #to_greener_pastures_s_outer_glow
+{
+	background-image: url("to_greener_pastures_s_outer_glow.png");
+	position: absolute;
+	top: 315px;
+	left: 217px;
+	width: 175px;
+	height: 17px;
+	z-index: 149;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #to_greener_pastures_1
+{
+	background-image: url("to_greener_pastures_1.png");
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 170px;
+	height: 11px;
+	z-index: 150;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #to
+{
+	background-image: url("to.png");
+	position: absolute;
+	top: 317px;
+	left: 396px;
+	width: 11px;
+	height: 12px;
+	z-index: 151;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #hours_ago_8_41am_2
+{
+	background-image: url("hours_ago_8_41am_2.png");
+	position: absolute;
+	top: 312px;
+	left: 523px;
+	width: 53px;
+	height: 17px;
+	z-index: 152;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+ #added
+{
+	background-image: url("added.png");
+	position: absolute;
+	top: 318px;
+	left: 177px;
+	width: 35px;
+	height: 12px;
+	z-index: 153;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #chrisdigthing
+{
+	background-image: url("chrisdigthing.png");
+	position: absolute;
+	top: 336px;
+	left: 78px;
+	width: 26px;
+	height: 26px;
+	z-index: 154;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #manny
+{
+	background-image: url("manny.png");
+	position: absolute;
+	top: 316px;
+	left: 126px;
+	width: 47px;
+	height: 17px;
+	z-index: 155;
+	
+}
+
+ #playlist_f_yeah_s
+{
+	background-image: url("playlist_f_yeah_s.png");
+	position: absolute;
+	top: 313px;
+	left: 416px;
+	width: 95px;
+	height: 20px;
+	z-index: 156;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #157
+{
+	background-image: url("157.png");
+	position: absolute;
+	top: 328px;
+	left: 515px;
+	width: 2px;
+	height: 2px;
+	z-index: 157;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #copy__2
+{
+	background-image: url("copy__2.png");
+	position: absolute;
+	top: 337px;
+	left: 108px;
+	width: 14px;
+	height: 10px;
+	z-index: 158;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #copy_3__2
+{
+	background-image: url("copy_3__2.png");
+	position: absolute;
+	top: 337px;
+	left: 666px;
+	width: 13px;
+	height: 11px;
+	z-index: 159;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #comments_box_3
+{
+	background-image: url("comments_box_3.png");
+	position: absolute;
+	top: 337px;
+	left: 584px;
+	width: 78px;
+	height: 25px;
+	z-index: 160;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #mannysmall_polaroid
+{
+	background-image: url("mannysmall_polaroid.png");
+	position: absolute;
+	top: 308px;
+	left: 25px;
+	width: 52px;
+	height: 60px;
+	z-index: 161;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #alba_copy_4
+{
+	background-image: url("alba_copy_4.png");
+	position: absolute;
+	top: 253px;
+	left: 25px;
+	width: 52px;
+	height: 63px;
+	z-index: 162;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #comments_box_2
+{
+	background-image: url("comments_box_2.png");
+	position: absolute;
+	top: 287px;
+	left: 584px;
+	width: 78px;
+	height: 23px;
+	z-index: 164;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #chrisdigthing_1
+{
+	background-image: url("chrisdigthing_1.png");
+	position: absolute;
+	top: 286px;
+	left: 78px;
+	width: 26px;
+	height: 23px;
+	z-index: 165;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #maile_l
+{
+	background-image: url("maile_l.png");
+	position: absolute;
+	top: 262px;
+	left: 125px;
+	width: 53px;
+	height: 17px;
+	z-index: 166;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #commented_wow_thanks_for_sharing_bad-ass_hope_you_get
+{
+	background-image: url("commented_wow_thanks_for_sharing_bad-ass_hope_you_get.png");
+	position: absolute;
+	top: 263px;
+	left: 183px;
+	width: 477px;
+	height: 41px;
+	z-index: 167;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #timestamp_2
+{
+	background-image: url("timestamp_2.png");
+	position: absolute;
+	top: 24px;
+	left: 77px;
+	width: 65px;
+	height: 17px;
+	z-index: 163;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+ #2
+{
+	background-image: url("2.png");
+	position: absolute;
+	top: 286px;
+	left: 665px;
+	width: 14px;
+	height: 10px;
+	z-index: 168;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #2
+{
+	background-image: url("2.png");
+	position: absolute;
+	top: 286px;
+	left: 107px;
+	width: 13px;
+	height: 10px;
+	z-index: 169;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #sarah_j
+{
+	background-image: url("sarah_j.png");
+	position: absolute;
+	top: 211px;
+	left: 123px;
+	width: 54px;
+	height: 17px;
+	z-index: 170;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #3
+{
+	background-image: url("3.png");
+	position: absolute;
+	top: 234px;
+	left: 666px;
+	width: 13px;
+	height: 10px;
+	z-index: 171;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #comment_button
+{
+	background-image: url("comment_button.png");
+	position: absolute;
+	top: 234px;
+	left: 584px;
+	width: 78px;
+	height: 23px;
+	z-index: 172;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #alba_copy_3
+{
+	background-image: url("alba_copy_3.png");
+	position: absolute;
+	top: 200px;
+	left: 23px;
+	width: 53px;
+	height: 63px;
+	z-index: 173;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #to_greener_pastures_s_outer_glow_1
+{
+	background-image: url("to_greener_pastures_s_outer_glow_1.png");
+	position: absolute;
+	top: 211px;
+	left: 221px;
+	width: 176px;
+	height: 18px;
+	z-index: 174;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #to_greener_pastures_2
+{
+	background-image: url("to_greener_pastures_2.png");
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 170px;
+	height: 12px;
+	z-index: 175;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #promoted_selection_6_copy_2
+{
+	background-image: url("promoted_selection_6_copy_2.png");
+	position: absolute;
+	top: 211px;
+	left: 419px;
+	width: 65px;
+	height: 15px;
+	z-index: 177;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #layer_12_copy
+{
+	background-image: url("layer_12_copy.png");
+	position: absolute;
+	top: 211px;
+	left: 483px;
+	width: 22px;
+	height: 18px;
+	z-index: 179;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #176
+{
+	background-image: url("176.png");
+	position: absolute;
+	top: 10px;
+	left: 18px;
+	width: 4px;
+	height: 3px;
+	z-index: 176;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #layer_11_copy
+{
+	background-image: url("layer_11_copy.png");
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 8px;
+	height: 14px;
+	z-index: 178;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #to
+{
+	background-image: url("to.png");
+	position: absolute;
+	top: 214px;
+	left: 400px;
+	width: 12px;
+	height: 12px;
+	z-index: 180;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #copy_5__2
+{
+	background-image: url("copy_5__2.png");
+	position: absolute;
+	top: 233px;
+	left: 108px;
+	width: 13px;
+	height: 10px;
+	z-index: 181;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #chrisdigthing_copy_4_s_drop_shadow
+{
+	background-image: url("chrisdigthing_copy_4_s_drop_shadow.png");
+	position: absolute;
+	top: 234px;
+	left: 80px;
+	width: 25px;
+	height: 23px;
+	z-index: 182;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #chrisdigthing_copy_4
+{
+	background-image: url("chrisdigthing_copy_4.png");
+	position: absolute;
+	top: 233px;
+	left: 84px;
+	width: 21px;
+	height: 19px;
+	z-index: 183;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #timestamp_1
+{
+	background-image: url("timestamp_1.png");
+	position: absolute;
+	top: 208px;
+	left: 508px;
+	width: 66px;
+	height: 17px;
+	z-index: 184;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+ #added
+{
+	background-image: url("added.png");
+	position: absolute;
+	top: 213px;
+	left: 182px;
+	width: 34px;
+	height: 13px;
+	z-index: 185;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #chart_copy
+{
+	background-image: url("chart_copy.png");
+	position: absolute;
+	top: 70px;
+	left: 313px;
+	width: 280px;
+	height: 259px;
+	z-index: 186;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #indemnify_me
+{
+	background-image: url("indemnify_me.png");
+	position: absolute;
+	top: 88px;
+	left: 40px;
+	width: 89px;
+	height: 18px;
+	z-index: 187;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #great_one
+{
+	background-image: url("great_one.png");
+	position: absolute;
+	top: 107px;
+	left: 168px;
+	width: 56px;
+	height: 21px;
+	z-index: 191;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #smashing_pumpkin
+{
+	background-image: url("smashing_pumpkin.png");
+	position: absolute;
+	top: 86px;
+	left: 147px;
+	width: 98px;
+	height: 21px;
+	z-index: 192;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #the_jolly_green
+{
+	background-image: url("the_jolly_green.png");
+	position: absolute;
+	top: 129px;
+	left: 160px;
+	width: 78px;
+	height: 21px;
+	z-index: 193;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #surreal_walk_through_the_park
+{
+	background-image: url("surreal_walk_through_the_park.png");
+	position: absolute;
+	top: 105px;
+	left: 41px;
+	width: 109px;
+	height: 28px;
+	z-index: 194;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #best_of_times
+{
+	background-image: url("best_of_times.png");
+	position: absolute;
+	top: 132px;
+	left: 37px;
+	width: 99px;
+	height: 18px;
+	z-index: 195;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #by_copy
+{
+	background-image: url("by_copy.png");
+	position: absolute;
+	top: 158px;
+	left: 136px;
+	width: 14px;
+	height: 10px;
+	z-index: 196;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #filthy_fruitees
+{
+	background-image: url("filthy_fruitees.png");
+	position: absolute;
+	top: 150px;
+	left: 155px;
+	width: 75px;
+	height: 20px;
+	z-index: 197;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #sorry_doesn_t_say_it_s
+{
+	background-image: url("sorry_doesn_t_say_it_s.png");
+	position: absolute;
+	top: 147px;
+	left: 44px;
+	width: 90px;
+	height: 27px;
+	z-index: 198;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #heart1
+{
+	background-image: url("heart1.png");
+	position: absolute;
+	top: 27px;
+	left: 168px;
+	width: 15px;
+	height: 14px;
+	z-index: 199;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #1
+{
+	background-image: url("1.png");
+	position: absolute;
+	top: 71px;
+	left: 188px;
+	width: 5px;
+	height: 9px;
+	z-index: 200;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #also_recommend
+{
+	background-image: url("also_recommend.png");
+	position: absolute;
+	top: 70px;
+	left: 71px;
+	width: 112px;
+	height: 11px;
+	z-index: 201;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #to_greener_pastures_3
+{
+	background-image: url("to_greener_pastures_3.png");
+	position: absolute;
+	top: 46px;
+	left: 55px;
+	width: 158px;
+	height: 19px;
+	z-index: 202;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #recommend_a_similar_track
+{
+	background-image: url("recommend_a_similar_track.png");
+	position: absolute;
+	top: 210px;
+	left: 45px;
+	width: 183px;
+	height: 15px;
+	z-index: 203;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #204
+{
+	background-image: url("204.png");
+	position: absolute;
+	top: 226px;
+	left: 44px;
+	width: 184px;
+	height: 3px;
+	z-index: 204;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #people_who
+{
+	background-image: url("people_who.png");
+	position: absolute;
+	top: 27px;
+	left: 76px;
+	width: 85px;
+	height: 15px;
+	z-index: 205;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+ #yes_no_box_copy
+{
+	background-image: url("yes_no_box_copy.png");
+	position: absolute;
+	top: 131px;
+	left: 1253px;
+	width: 16px;
+	height: 16px;
+	z-index: 206;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+

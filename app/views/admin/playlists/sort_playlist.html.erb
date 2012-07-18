@@ -1,0 +1,38 @@
+<script type="text/javascript">
+  var rails_env = '<%= Rails.env %>';
+</script>
+<h1>Sorting <%= @playlist.name %></h1>
+
+<%= render :partial => "playlist_song_order", :locals => {:playlist => @playlist} %>
+
+  <style>
+    #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+    #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+    #sortable li span { position: absolute; margin-left: -1.3em; }
+  </style>
+  <script>
+  $(function() {
+    $("#sortable").sortable();
+    $("#sortable").disableSelection();
+    $("#sortable").bind('sortstop', function(e, ui){
+
+      id = $(ui.item).attr('song-id');
+
+      old_position = $(ui.item).attr('position');
+
+      new_position = $(ui.item).parent().children().index(ui.item);
+
+      url = "/admin/playlists/<%= @playlist.id %>/move_song_position?song_id="+id+"&position="+new_position;
+
+      console.log('id: ' + id);
+
+      console.log('old position: ' + old_position);
+
+      console.log('new position: ' + new_position);
+
+      $.get(url);
+
+
+    });
+  });
+</script>

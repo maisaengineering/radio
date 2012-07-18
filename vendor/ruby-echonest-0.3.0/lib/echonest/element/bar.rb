@@ -1,0 +1,2 @@
+class Bar < Section
+end

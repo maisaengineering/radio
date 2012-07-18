@@ -1,0 +1,49 @@
+<%= stylesheet_link_tag "tag_songs" %>
+
+<form id="tag_form">
+
+<div id="chosen_art"><img width="420" height="420" id="chosen_img" src="" /></div>
+<div id="chosen_art_left"><img width="150" height="150" id="chosen_img_left" src="" /></div>
+<div id="chosen_art_right"><img width="150" height="150" id="chosen_img_right" src="" /></div>
+
+<div id="background_5"><img class="chooseable-art" src="/assets/background_5.png" /></div>
+<div id="background_4"><img class="chooseable-art" src="/assets/background_4.png" /></div>
+<div id="background_3"><img class="chooseable-art"src="/assets/background_3.png" /></div>
+
+<div id="background_2"><img class="chooseable-art" src="/assets/background_2.png" /></div>
+<div id="background_1"><img class="chooseable-art" src="/assets/background_1.png" /></div>
+<div id="mid_of_record_hole"></div>
+<!--
+<div id="select_album_art_button"></div>
+<div id="explain_text"></div>
+<div id="almost_there"></div>
+<div id="logo_tag_songs"></div>
+<div id="lastly_text"></div>
+<div id="tag_songs_top_desc"></div>
+-->
+<div id="blank_torn_paper_2"></div>
+<div id="done_button_tag_songs"></div>
+<div id="background_tag_songs"></div>
+
+
+<div id="images">
+<% index = 0 %>
+<% @images.each do |image| %>
+<img class="chooseable-art" width="80" height="80" src="<%= image.uri %>" />
+<% index += 1 %>
+<% break if index > 4 %>
+<% end %>
+</div>
+
+
+
+<div id="ref-holder"><textarea name="ref_comment" id="ref_comment" /></textarea></div>
+<div class="hider">
+<input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"></input>
+<input type="file" name="art_file" id="album-art" />
+<input type="hidden" name="art_url" id="art_url" />
+<input type="hidden" value="<%= @song_id %>" name="song_id" />
+</div>
+
+
+</form>

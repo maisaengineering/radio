@@ -1,0 +1,83 @@
+#page-bottom {
+position:relative;
+background-color:#000;
+width:auto;
+top:0px;
+height:1780px;
+z-index:6;
+margin-top: -1035px;
+}
+
+
+#background_dilly_yo
+{
+        background-image: url("the_dilly_background.png");
+        position: relative;
+        background-repeat:no-repeat;
+	    background-attachment:absolute;
+        top: -120px;
+        left: 0%;
+        width: auto;
+        height:960px;
+        z-index: 2 !important;
+}
+#close_button_dilly_yo
+{
+        background-image: url("close_button_comment_activity.png");
+        position: absolute;
+        top: -92px;
+        left: 849px;
+        width: 15px;
+        height: 15px;
+        z-index: 12 !important;
+}
+#dilly_player
+{
+position: absolute;
+top: 126px;
+left: 270px;
+width: 390px;
+height: 350px;
+z-index: 1;
+}
+#over_dilly_player
+{
+position: absolute;
+top: 126px;
+left: 270px;
+width: 390px;
+height: 350px;
+z-index: 3;
+}
+#dilly_play_button
+{
+background-image:url(play_copy_2.png);
+position:absolute;
+left:148px;
+top:118px;
+width: 92px;
+height: 98px;
+z-index:68!important;
+}
+#dilly_pause_button
+{
+background-image:url(pause_copy.png);
+position:absolute;
+display: none;
+left:148px;
+top:118px;
+width: 92px;
+height: 98px;
+z-index:68!important;
+}
+#dilly_ad_killer {
+background-color:#000;
+height: 110px;
+left: 255px;
+opacity: 1;
+display: block;
+position: absolute;
+top: 425px;
+width: 425px;
+z-index: 1;
+}

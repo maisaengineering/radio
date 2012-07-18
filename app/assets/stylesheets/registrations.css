@@ -1,0 +1,176 @@
+#background_registration
+{
+        background-image: url("background_registration.png");
+        position: absolute;
+        top: -230px;
+		left: -290px;
+        width: 413px;
+        height: 297px;
+        z-index: 0 !important;
+}
+
+ #small_logo_ish
+{
+        background-image: url("small_logo_ish.png");
+        position: absolute;
+        top: 31px;
+        left: -279px;
+        width: 63px;
+        height: 27px;
+        z-index: 3 !important;
+}
+
+ #submit_registration_button
+{
+        background-image: url("submit_registration_button.png");
+        position: absolute;
+        top: 37px;
+        left: 25px;
+        width: 38px;
+        height: 23px;
+        z-index: 30 !important;
+}
+
+ #new_school
+{
+        background-image: url("new_school.png");
+        position: absolute;
+        top: -170px;
+        left: -248px;
+        width: 90px;
+        height: 13px;
+        z-index: 5 !important;
+}
+
+ #fbconnectbutton
+{
+        background-image: url("fbconnectbutton.png");
+        position: absolute;
+        top: -170px;
+        left: -150px;
+        width: 142px;
+        height: 20px;
+        z-index: 6 !important;
+}
+
+ #profile_pic_button_upload_songs
+{
+        background-image: url("profile_pic_button_upload_songs.png");
+        position: absolute;
+        top:-12px;
+        left: -50px;
+        width: 63px;
+        height: 24px;
+        z-index: 7 !important;
+}
+
+ #preferred
+
+{
+        background-image: url("preferred.png");
+        position: absolute;
+        top: -150px;
+        left: -230px;
+        width: 60px;
+        height: 12px;
+        z-index: 8 !important;
+}
+
+ #or
+{
+        background-image: url("or.png");
+        position: absolute;
+        top: -130px;
+        left: -146px;
+        width: 40px;
+        height: 14px;
+        z-index: 9 !important;
+}
+
+ #registration_close_button
+{
+        background-image: url("registration_close_button.png");
+        position: absolute;
+        top: -215px;
+        left: 89px;	
+        width: 15px;
+        height: 15px;
+        z-index: 10 !important;
+}
+
+ #word_two_ways_to_get_the_party_started
+{
+        background-image: url("word_two_ways_to_get_the_party_started.png");
+        position: absolute;
+        top: -210px;
+        left: -76%;
+        width: 341px;
+        height: 17px;
+        z-index: 11 !important;
+}
+
+ #old_school
+{
+        background-image: url("old_school.png");
+        position: absolute;
+        top: -100px;
+        left: -246px;
+        width: 88px;
+        height: 13px;
+        z-index: 12 !important;
+}
+
+ #username
+{
+        background-image: url("username.png");
+        position: absolute;
+        top: -100px;
+        left: -150px;
+        width: 72px;
+        height: 13px;
+        z-index: 13 !important;
+}
+
+ #password
+{
+        background-image: url("password.png");
+        position: absolute;
+        top: -70px;
+        left: -150px;
+        width: 74px;
+        height: 13px;
+        z-index: 14 !important;
+}
+
+ #email
+{
+        background-image: url("email.png");
+        position: absolute;
+        top: -40px;
+        left: -150px;
+        width: 41px;
+        height: 13px;
+        z-index: 15 !important;
+}
+
+ #profile_pic
+{
+
+        background-image: url("profile_pic.png");
+        position: absolute;
+        top: -10px;
+        left: -150px;
+        width: 84px;
+        height: 12px;
+        z-index: 16 !important;
+}
+#select_pic_file_text
+{
+        position: absolute;
+        top: 12px;
+        left: -151px;
+        width: 265px;
+        height: 23px;
+        text-align: left;
+        z-index: 16 !important;
+}

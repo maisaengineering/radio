@@ -1,0 +1,107 @@
+<script type="text/javascript">
+  var rails_env = '<%= Rails.env %>';
+</script>
+<h1>Upload MP3s</h1>
+
+<p>Only content you are allowed to post.</p>
+
+<style>
+#swfupload-control p{ margin:10px 5px; font-size:0.9em; }
+#log{ margin:0; padding:0; width:500px;}
+#log li{ list-style-position:inside; margin:2px; border:1px solid #ccc; padding:10px; font-size:12px;
+    font-family:Arial, Helvetica, sans-serif; color:#333; background:#fff; position:relative;}
+#log li .progressbar{ border:1px solid #333; height:5px; background:#fff; }
+#log li .progress{ background:#999; width:0%; height:5px; }
+#log li p{ margin:0; line-height:18px; }
+#log li.success{ border:1px solid #339933; background:#ccf9b9; }
+#log li span.cancel{ position:absolute; top:5px; rightright:5px; width:20px; height:20px;
+    background:url('js/swfupload/cancel.png') no-repeat; cursor:pointer; }
+</style>
+
+
+<div id="swfupload-control">
+    <input type="button" id="button" />
+    <p id="queuestatus" ></p>
+    <ol id="log"></ol>
+</div>
+
+<script>
+
+$(function() {
+
+  <%- session_key = Rails.application.config.session_options[:key] -%>
+  form_authenticity_token = encodeURIComponent("<%= form_authenticity_token %>");
+
+  $('#swfupload-control').swfupload({
+    upload_url: "<%= upload_songs_admin_songs_url(:_ish_session => cookies[session_key]) %>" + "&authenticity_token=" + form_authenticity_token,
+    file_post_name: 'song[audio]',
+    file_size_limit : "50mb",
+    file_types : "*.mp3",
+    file_types_description : "MP3 files",
+    flash_url : "/swfupload.swf",
+    button_text : 'Upload Songs',
+    button_width : 114,
+    button_height : 29,
+    button_placeholder : $('#button')[0],
+    debug: false
+  })
+    .bind('fileQueued', function(event, file){
+      var listitem='<li id="'+file.id+'" >'+
+        'File: <em>'+file.name+'</em> ('+Math.round(file.size/1024)+' KB) <span class="progressvalue" ></span>'+
+        '<div class="progressbar" ><div class="progress" ></div></div>'+
+        '<p class="status" >Pending</p>'+
+        '<span class="cancel" >&nbsp;</span>'+
+        '</li>';
+      $('#log').append(listitem);
+      $('li#'+file.id+' .cancel').bind('click', function(){ //Remove from queue on cancel click
+        var swfu = $.swfupload.getInstance('#swfupload-control');
+        swfu.cancelUpload(file.id);
+        $('li#'+file.id).slideUp('fast');
+      });
+      // start the upload since it's queued
+      $(this).swfupload('startUpload');
+    })
+    .bind('fileQueueError', function(event, file, errorCode, message){
+      alert('Size of the file '+file.name+' is greater than limit');
+    })
+    .bind('fileDialogComplete', function(event, numFilesSelected, numFilesQueued){
+      $('#queuestatus').text('Files Selected: '+numFilesSelected+' / Queued Files: '+numFilesQueued);
+    })
+    .bind('uploadStart', function(event, file){
+      $('#log li#'+file.id).find('p.status').text('Uploading...');
+      $('#log li#'+file.id).find('span.progressvalue').text('0%');
+      $('#log li#'+file.id).find('span.cancel').hide();
+    })
+    .bind('uploadProgress', function(event, file, bytesLoaded){
+      //Show Progress
+      var percentage=Math.round((bytesLoaded/file.size)*100);
+      $('#log li#'+file.id).find('div.progress').css('width', percentage+'%');
+      $('#log li#'+file.id).find('span.progressvalue').text(percentage+'%');
+    })
+    .bind('uploadSuccess', function(event, file, serverData){
+      var item=$('#log li#'+file.id);
+      item.find('div.progress').css('width', '100%');
+      item.find('span.progressvalue').text('100%');
+      item.addClass('success').find('p.status').html('Done!!!');
+    })
+    .bind('uploadComplete', function(event, file){
+      // upload has completed, try the next one in the queue
+      $(this).swfupload('startUpload');
+    });
+
+
+    $("#song_artist").autocomplete({
+    			source: "/autocomplete_artist",
+    			minLength: 2
+    		});
+    $("#genre").autocomplete({
+    			source: "/autocomplete_genre",
+    			minLength: 2
+    		});
+
+
+
+});
+
+
+</script>

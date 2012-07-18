@@ -1,0 +1,21 @@
+<li>
+	<div class="comment_class" style="margin:1px;">
+		<div id="photo-comment-holder">	
+			<span class="comment-username"><%= comment.user.username %></span>
+			<!--<img id="photo-comment-img" src="<%= comment.user.photo.url %>" />-->
+			<div id="comments_blank_pic">
+			<img id="photo-comment-img" src="<%= comment.user.fb_profile_pic ? comment.user.fb_profile_pic : comment.user.photo.url %>" />
+			</div>
+		</div>
+		
+		<div style="width:300px; float:left; line-height:90%; text-align:left; margin-top:5px; ">
+			<span>
+			  <span class="title courier_new truecaps over_player" id="comments_view"><%= comment.comment %></span>
+			  <span id="comments_time">
+				  <span class="helvetica" style="font-size: 7pt;"><%= distance_of_time_in_words(comment.created_at, Time.now) %> ago</span><br />
+				  <span class="helvetica" style="font-size: 7pt;"><%= format_comment_time(comment.created_at) %></span>
+			  </span>
+			</span>
+		</div>
+	</div>
+</li>

@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -e
+oldrev=$1
+newrev=$2
+
+run() {
+  [ -x $1 ] && $1 $oldrev $newrev
+}
+
+echo files changed: $(git diff $oldrev $newrev --diff-filter=ACDMR --name-only | wc -l)
+
+umask 002
+
+git submodule init && git submodule sync && git submodule update
+
+# fix RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+rvm use "1.9.2-p290@ishlist"
+echo "stopping passenger"
+#passenger stop -p9046
+echo "updating cron"
+#whenever --update-crontab
+bundle install --without development test
+
+
+run deploy/before_restart
+run deploy/restart && run deploy/after_restart

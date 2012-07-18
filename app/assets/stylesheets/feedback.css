@@ -1,0 +1,79 @@
+body { background-color: black; }
+
+#background_feedback
+{
+        background-image: url("background_feedback.png");
+        position: absolute;
+        top: -25px;
+        left: -32px;
+        width: 1545px;
+        height: 1452px;
+        z-index: 2 !important;
+}
+
+ #bugsareproblems
+{
+        background-image: url("bugsareproblems.png");
+        position: absolute;
+        top: 425px;
+        left: 321px;
+        width: 110px;
+        height: 12px;
+        z-index: 3 !important;
+}
+
+ #big_logo_feedback
+{
+        background-image: url("big_logo_feedback.png");
+        position: absolute;
+        top: 181px;
+        left: 520px;
+        width: 325px;
+        height: 150px;
+        z-index: 4 !important;
+}
+
+ #much_appreciated
+{
+        background-image: url("much_appreciated.png");
+        position: absolute;
+        top: 750px;
+        left: 567px;
+        width: 293px;
+        height: 24px;
+        z-index: 5 !important;
+}
+
+ #clipboard
+{
+        background-image: url("clipboard.png");
+        position: absolute;
+        top: 450px;
+        left: 926px;
+        width: 160px;
+        height: 159px;
+        z-index: 6 !important;
+}
+
+ #general_feedback
+{
+        background-image: url("general_feedback.png");
+        position: absolute;
+        top: 424px;
+        left: 940px;
+        width: 125px;
+        height: 12px;
+        z-index: 7 !important;
+}
+
+ #no_bugs
+{
+        background-image: url("no_bugs.png");
+        position: absolute;
+        top: 451px;
+        left: 298px;
+        width: 153px;
+        height: 153px;
+        z-index: 8 !important;
+}
+

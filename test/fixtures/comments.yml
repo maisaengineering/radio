@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  song_id: 1
+  comment: MyText
+  user1_id: 1
+  parent_id: 1
+
+two:
+  song_id: 1
+  comment: MyText
+  user1_id: 1
+  parent_id: 1

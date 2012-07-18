@@ -1,0 +1,5 @@
+<ul id="sortable">
+<% playlist.songs.each do |s| %>
+  <li class="ui-state-default" position="<%= playlist.songs.list_position(s) %>" song-id="<%= s.id %>"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%= s.title %></li>
+<% end %>
+</ul>

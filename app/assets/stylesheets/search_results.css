@@ -1,0 +1,54 @@
+#background_search_results
+{
+background-image:url("background_search.png");
+position:relative;
+margin-top:50px;
+width:923px;
+height:867px;
+}
+
+#search_results
+{
+background-image: url("search_results.png");
+position: absolute;
+top: 180px;
+left: 155px;
+width: 146px;
+height: 59px;
+z-index: 6 !important;
+}
+
+#search_newsearch
+{
+background-image: url("search_newsearch.png");
+position: absolute;
+top: 180px;
+left: 650px;
+width: 146px;
+height: 24px;
+z-index: 6 !important;
+}
+
+#next_arrow_results 
+{
+background-image:url(next_arrow.png);
+position:absolute;
+top: 253px;
+left: 724px;
+width:61px;
+height:60px;
+padding:1px;
+z-index:11!important;
+}
+
+#previous_arrow_results
+{
+background-image:url(previous_arrow.png);
+position:absolute;
+top: 253px;
+left: 135px;
+width:61px;
+height:60px;
+padding:1px;
+z-index:12!important;
+}

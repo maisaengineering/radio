@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag "hookup_entry" %>
+
+<div id="background_hookup_entry"></div>
+<div id="close_button_hookup_entry"></div>
+<div id="blank_torn_paper"></div>
+<div id="hookup_entry_heading">Today's Entries:</div>
+<table id="todays_hook_ups">
+  <tr>
+  	<th width="50px"><b>Sr.no.</b></th>
+  	<th width="100px"><b>User Name</b></th>
+  	<th><b>Entry time</b></th>
+  </tr>
+  <% @hooks.each_with_index do |hook,index| %>
+  <tr>
+  	<td>
+  		<%= index+1%>
+  	</td>
+  	<td>
+  		<%= hook.user.username %>
+  	</td>
+  	<td>
+  		<%= format_hookup_entry_time(hook.created_at) %>
+  	</td>
+  </tr>
+  <% end %>
+</table>

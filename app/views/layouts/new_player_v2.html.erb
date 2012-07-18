@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link type="text/css" href="/cometchat/cometchatcss.php" rel="stylesheet" charset="utf-8">
+  <script type="text/javascript" src="/cometchat/cometchatjs.php" charset="utf-8"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>The IshList</title>
+  <link href='http://fonts.googleapis.com/css?family=Unkempt|Alegreya+SC:400,900|Bangers' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag "jquery-ui-1.8.18.custom.css", "jquery.simplyscroll.css", "new_player_v2.css" %>
+  <!--<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>-->
+  <%= javascript_include_tag "application" %>
+  <script src="//connect.facebook.net/en_US/all.js"></script>
+  <script type="text/javascript">
+    var rails_env = '<%= Rails.env %>';
+  </script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="main_body">
+	<%= yield %>
+	<div id="page-bottom">
+		<div id="page-holder"></div>
+		<div id="page-holder-2"></div>
+	</div>
+	<div class="sc-player-engine-container"></div>
+</div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29094475-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
+

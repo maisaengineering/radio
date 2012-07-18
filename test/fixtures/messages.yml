@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user1_id: 1
+  user2_id: 1
+  subject: MyString
+  message: MyText
+
+two:
+  user1_id: 1
+  user2_id: 1
+  subject: MyString
+  message: MyText

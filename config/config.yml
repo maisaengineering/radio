@@ -1,0 +1,12 @@
+development:
+    FB_SECRET : 'a846783455d865b3836d80e312f8a0e6'
+    FB_APP_ID : '339163289483791'
+    url : 'http://localhost:3000' 
+production:
+    FB_SECRET : '96a358e490b9c17cf1d4ed10086aa9f4'
+    FB_APP_ID : '230386677076159'
+    url : 'http://www.ishlist.com'
+staging:
+    FB_SECRET : '30457388230febf1204fa63f104321ef'
+    FB_APP_ID : '461416740553715'
+    url : 'http://staging.ishlist.com'

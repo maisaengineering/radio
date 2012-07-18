@@ -1,0 +1,50 @@
+#background_hookup_entry
+{
+        background-image: url("background.png");
+        position: relative;
+        background-repeat:no-repeat;
+        background-attachment:absolute;
+        left: 0%;
+        width: auto;
+        height:960px;
+        z-index: 2 !important;
+}
+#close_button_hookup_entry
+{
+        background-image: url("close_button_comment_activity.png");
+        position: absolute;
+        top: 40px;
+        left: 849px;
+        width: 15px;
+        height: 15px;
+        z-index: 12 !important;
+}
+
+#blank_torn_paper
+{
+        background-image: url("background_torn_paper.png");
+        position: absolute;
+        top: 50px;
+        left: 10%;
+        width: 638px;
+        height: 770px;
+        z-index: 5 !important;
+}
+#todays_hook_ups
+{
+position: absolute;
+top: 136px;
+left: 230px;
+z-index: 5;
+line-height: 30px;
+}
+#hookup_entry_heading
+{
+position: absolute;
+z-index: 5;
+left: 350px;
+width: 250px;
+font-size: 30px;
+top: 85px;
+font-weight: bold;
+}

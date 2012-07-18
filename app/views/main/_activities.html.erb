@@ -1,0 +1,76 @@
+  <div style="width: 96%;height: 27px;padding-left: 25px;">
+    <span style="float: left;margin-left: 163px;padding-top: 4px;">
+      <span style="color: #211010;font-variant: small-caps;font-size: 16px;"><%=truncate(@song.title, :length => 30)%></span>
+      <span style="font-size: 12px;">by</span>
+      <span style="color: #20232F;font-weight: bold;font-variant: small-caps;font-size: 16px;"><%=truncate(@song.artist.name, :length => 25)%></span>
+    </span>
+  </div>
+  <table style="margin-top: 3px;font-size: 13px;">
+    <% @recently_active_objects.each do |object| %>
+      <tr>
+        <td rowspan="2">
+          <div style ="background-image:url(/assets/blank_polaroid_activity_page.png);height:54px;float: left;width: 49px;margin-left: -3px;margin-top: -4px;">
+            <% if object.class.name == "Song" %>
+              <img id="photo-comment-img" src="<%= object.uploader_photo%>" style="width: 31px;height: 37px;padding-left: 10px;padding-top: 5px;" />
+            <% else %>
+              <img id="photo-comment-img" src="<%= object.user.fb_profile_pic ? object.user.fb_profile_pic.gsub('square','small') : object.user.photo.url %>" style="width: 31px;height: 37px;padding-left: 10px;padding-top: 5px;" />
+            <% end %>
+          </div>
+        </td>
+        <td rowspan="2" width="50px;" style="vertical-align: bottom;padding-bottom: 3px;">
+          <%=link_to_function image_tag("Digicon.png"),"like_a_comment('#{object.class.name}','#{object.id}')"%>
+          <span id = "<%=object.class.name%>_<%=object.id%>" style='vertical-align: top;font-size: 10px;margin-left: -5px;'>(<%=object.comment_likes.count%>)</span>
+        </td>
+        <td style="vertical-align: text-top;width: 600px;">
+          <span style="float:left;">
+          <% case object.class.name %>
+          <% when 'Song' %>
+            <span style="color: #600;font-weight: bold;">
+              <%= object.uploader %>
+            </span>
+            shared
+            <span style="color: #211010;font-variant: small-caps;">
+              <%= truncate(object.title,:length => 30) %>
+            </span>
+            by
+            <span style="color: #20232F;font-variant: small-caps;font-weight: bold;">
+              <%= truncate(object.artist.name, :length => 30) %>
+            </span>
+          <% when 'Comment'%>
+            <span style="color: #600;font-weight: bold;">
+              <%=(object.user.username ? object.user.username : object.user.email) %>
+            </span>
+            commented: <%= truncate(object.comment,:length => 40) %>
+          <% when 'Favorite'%>
+            <span style="color: #600;font-weight: bold;">
+              <%=(object.user.username ? object.user.username : object.user.email) %>
+            </span>
+            added
+            <span style="color: #211010;font-style: italic;font-variant: small-caps;font-weight: bold;">
+              <%=object.song.title%>
+            </span>
+            to
+            <span style="color: #CD404D;font-weight: bold;">
+              FAVORITES.
+            </span>
+          <% end %>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%# if object.class.name == "Comment" %>
+            <span class="fl" style="margin-left: 20px;"><%#= object.comment.slice(51..100) %></span>
+          <%# end %>
+          <div style="float:right;height: 20px;margin-top: -3px;">
+            <div class="helvetica" style="width:85px;float: left;margin: 2px 2px 0px 0px;text-align: right;">
+              <div class="helvetica" style="font-size: 6pt;   font-family:Trebuchet MS; width: 85px;"><%= distance_of_time_in_words(object.created_at, Time.now) %> ago</div>
+              <div class="helvetica" style="font-size: 6pt; font-family:Trebuchet MS; width: 85px;"><%= format_comment_time(object.created_at) %></div>
+            </div>
+            <%=link_to_function image_tag("comments.png"),"show_comments_on_activity('#{object.class.name}','#{object.id}')"%>
+            <span id = "comments-<%=object.class.name%>_<%=object.id%>" style='vertical-align: top;font-size: 10px;margin-left: -5px;'>(<%=object.comment_on_activities.count%>)</span>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </table>

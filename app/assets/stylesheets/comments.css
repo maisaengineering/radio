@@ -1,0 +1,297 @@
+#comments_place{
+font-size:11pt; 
+font-family:Trebuchet MS; 
+float:left; 
+margin-left:10px;
+}
+
+
+#more_on_recent_activities
+{
+background-image: url("more.png");
+position: absolute;
+top: 510px;
+left: 504px;
+width: 50px;
+height: 19px;
+z-index: 7 !important;   
+}
+
+#prev_on_recent_activities
+{
+background-image: url("prev_activity.png");
+position: absolute;
+top: 510px;
+left: 450px;
+width: 50px;
+height: 19px;
+display: none;
+z-index: 7 !important;   
+}
+
+#next_on_recent_activities
+{
+background-image: url("next_activity.png");
+position: absolute;
+top: 510px;
+left: 504px;
+width: 50px;
+height: 19px;
+display: none;
+z-index: 7 !important;   
+}
+
+#background_comment
+{
+        background-image: url("commentsctivitybg.png");
+        position: relative;
+        background-repeat:no-repeat;
+		top:-125px;
+		margin-top:-980px;
+        width: auto;
+        height:950px;
+        z-index: 2 !important;
+}
+
+.song_activities
+{
+        position: absolute;
+        top: 83px;
+        left: 149px;
+        width: 615px;
+        height: 445px;
+        color: black;
+        z-index: 7 !important;    
+}
+
+.comment_on_activity_popup
+{
+position: absolute;
+top: 160px;
+z-index: 10 !important;
+left: 285px;
+width: 400px;
+background-color: gray;
+height: 320px;
+display: none;
+}
+
+#older_activity_comments
+{
+position: absolute;
+text-align: left;
+top: 26px;
+z-index: 10 !important;
+left: 12px;
+width: 376px;
+background-color: white;
+height: 222px;
+overflow-y: scroll;
+word-break: break-all;
+}
+
+ #close_popup_button
+{
+        background-image: url("close_button.png");
+        position: absolute;
+        top: 5px;
+        left: 95%;
+        width: 16px;
+        height: 16px;
+        z-index: 14 !important;
+}
+
+.fr 
+{
+        float: right;
+}
+
+.fl 
+{
+        float: left;
+}
+
+#mid_of_record_hole_activity
+{
+background-image: url("mid_of_record_hole_copy.png");
+position: absolute;
+top: 285px;
+left: 445px;
+width: 40px;
+height: 40px;
+z-index: 5 !important;
+}
+
+#background_copy_activity
+{
+background-image: url("grouch_eligh.png");
+position: absolute;
+top: 120px;
+left: 23%;
+width: 385px;
+height: 366px;
+background-size: 100%;
+z-index: 1 !important;
+}
+
+#comment_box_on_activity_page
+{
+background-image: url(cleanercommentbox.png);
+position: absolute;
+top: -15px;
+left: 25%;
+width: 376px;
+height: 64px;
+z-index: 14!important;
+}
+
+#comment_box_on_activity_popup
+{
+background-image: url(comment_box.png);
+position: absolute;
+top: 255px;
+left: 3%;
+width: 378px;
+height: 51px;
+z-index: 14!important;
+}
+#activity_chart
+{
+background-image: url("lastestactivitychart.png");
+position: absolute;
+top: 75px;
+left: 144px;
+width: 630px;
+height: 473px;
+z-index: 6 !important;
+}
+
+#yup_on_holler_on_activity_page {
+background-image:url(yup_on_holler.png);
+position:absolute;
+top: 21px;
+left: 624px;
+width:29px;
+height:18px;
+z-index:15!important;
+}
+
+#yup_on_holler_on_activity_popup {
+background-image:url(yup_on_holler.png);
+position:absolute;
+top:287px;
+left:88%;
+width:29px;
+height:18px;
+z-index:15!important;
+}
+ #chart_comments_comment_activity
+{
+        background-image: url("chart_comments_comment_activity.png");
+        position: absolute;
+        top: 96px;
+        left: 346px;
+        width: 677px;
+        height: 640px;
+        z-index: 6 !important;
+}
+
+ #comment
+{
+        background-image: url("comment.png");
+        position: absolute;
+        top: 161px;
+        left: 495px;
+        width: 397px;
+        height: 47px;
+        z-index: 3 !important;
+}
+
+ #yup_comment_activity
+{
+        background-image: url("yup_comment_activity.png");
+        position: absolute;
+        top: 188px;
+        left: 858px;
+        width: 28px;
+        height: 16px;
+        z-index: 4 !important;
+}
+
+ #mid_of_record_hole_copy
+{
+        background-image: url("mid_of_record_hole_copy.png");
+        position: absolute;
+        top: 450px;
+        left: 667px;
+        width: 40px;
+        height: 40px;
+        z-index: 5 !important;
+}
+
+ #more_comments_link_comment_activity
+{
+        background-image: url("more_comments_link_comment_activity.png");
+        position: absolute;
+        top: 687px;
+        left: 745px;
+        width: 41px;
+        height: 16px;
+        z-index: 7 !important;
+}
+
+ #chart_copy_comment_activity
+{
+        background-image: url("chart_copy_comment_activity.png");
+        position: absolute;
+        top: 22px;
+        left: 199px;
+        width: 265px;
+        height: 245px;
+        z-index: 8 !important;
+}
+
+ #also_recommend_comment_activity
+{
+        background-image: url("also_recommend_comment_activity.png");
+        position: absolute;
+        top: 88px;
+        left: 266px;
+        width: 114px;
+        height: 11px;
+        z-index: 9 !important;
+}
+
+ #recommend_a_similar_track_link
+{
+        background-image: url("recommend_a_similar_track_link.png");
+        position: absolute;
+        top: 220px;
+        left: 241px;
+        width: 173px;
+        height: 17px;
+        z-index: 10 !important;
+}
+
+ #people_who_comment_activity
+{
+        background-image: url("people_who_comment_activity.png");
+        position: absolute;
+        top: 45px;
+        left: 271px;
+        width: 105px;
+        height: 17px;
+        z-index: 11 !important;
+}
+
+ #close_button_comment_activity
+{
+        background-image: url("close_button_comment_activity.png");
+        position: absolute;
+        top: 68px;
+        left: 1071px;
+        width: 15px;
+        height: 15px;
+        z-index: 12 !important;
+}
+

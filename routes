@@ -1,0 +1,77 @@
+                  admin_dashboard            /admin(.:format)                                  {:action=>"index", :controller=>"admin/dashboard"}
+     sort_playlist_admin_playlist GET        /admin/playlists/:id/sort_playlist(.:format)      {:action=>"sort_playlist", :controller=>"admin/playlists"}
+move_song_position_admin_playlist GET        /admin/playlists/:id/move_song_position(.:format) {:action=>"move_song_position", :controller=>"admin/playlists"}
+   delete_playlist_admin_playlist DELETE     /admin/playlists/:id/delete_playlist(.:format)    {:action=>"delete_playlist", :controller=>"admin/playlists"}
+                  admin_playlists GET        /admin/playlists(.:format)                        {:action=>"index", :controller=>"admin/playlists"}
+                                  GET        /admin/playlists(.:format)                        {:action=>"new", :controller=>"admin/playlists"}
+     move_song_up_admin_playlists POST       /admin/playlists/move_song_up(.:format)           {:action=>"move_song_up", :controller=>"admin/playlists"}
+   move_song_down_admin_playlists POST       /admin/playlists/move_song_down(.:format)         {:action=>"move_song_down", :controller=>"admin/playlists"}
+    playlist_tool_admin_playlists GET        /admin/playlists/playlist_tool(.:format)          {:action=>"playlist_tool", :controller=>"admin/playlists"}
+  create_playlist_admin_playlists POST       /admin/playlists/create_playlist(.:format)        {:action=>"create_playlist", :controller=>"admin/playlists"}
+  add_to_playlist_admin_playlists POST       /admin/playlists/add_to_playlist(.:format)        {:action=>"add_to_playlist", :controller=>"admin/playlists"}
+     remove_songs_admin_playlists POST       /admin/playlists/remove_songs(.:format)           {:action=>"remove_songs", :controller=>"admin/playlists"}
+                                  GET        /admin/playlists(.:format)                        {:action=>"index", :controller=>"admin/playlists"}
+                                  POST       /admin/playlists(.:format)                        {:action=>"create", :controller=>"admin/playlists"}
+               new_admin_playlist GET        /admin/playlists/new(.:format)                    {:action=>"new", :controller=>"admin/playlists"}
+              edit_admin_playlist GET        /admin/playlists/:id/edit(.:format)               {:action=>"edit", :controller=>"admin/playlists"}
+                   admin_playlist GET        /admin/playlists/:id(.:format)                    {:action=>"show", :controller=>"admin/playlists"}
+                                  PUT        /admin/playlists/:id(.:format)                    {:action=>"update", :controller=>"admin/playlists"}
+                                  DELETE     /admin/playlists/:id(.:format)                    {:action=>"destroy", :controller=>"admin/playlists"}
+     update_song_title_admin_song PUT        /admin/songs/:id/update_song_title(.:format)      {:action=>"update_song_title", :controller=>"admin/songs"}
+    update_artist_name_admin_song PUT        /admin/songs/:id/update_artist_name(.:format)     {:action=>"update_artist_name", :controller=>"admin/songs"}
+    update_album_title_admin_song PUT        /admin/songs/:id/update_album_title(.:format)     {:action=>"update_album_title", :controller=>"admin/songs"}
+      change_album_art_admin_song POST       /admin/songs/:id/change_album_art(.:format)       {:action=>"change_album_art", :controller=>"admin/songs"}
+                      admin_songs GET        /admin/songs(.:format)                            {:action=>"new", :controller=>"admin/songs"}
+          share_audio_admin_songs GET        /admin/songs/share_audio(.:format)                {:action=>"share_audio", :controller=>"admin/songs"}
+            add_links_admin_songs POST       /admin/songs/add_links(.:format)                  {:action=>"add_links", :controller=>"admin/songs"}
+        song_uploader_admin_songs GET        /admin/songs/song_uploader(.:format)              {:action=>"song_uploader", :controller=>"admin/songs"}
+         upload_songs_admin_songs POST       /admin/songs/upload_songs(.:format)               {:action=>"upload_songs", :controller=>"admin/songs"}
+               search_admin_songs GET        /admin/songs/search(.:format)                     {:action=>"search", :controller=>"admin/songs"}
+                                  GET        /admin/songs(.:format)                            {:action=>"index", :controller=>"admin/songs"}
+                                  POST       /admin/songs(.:format)                            {:action=>"create", :controller=>"admin/songs"}
+                   new_admin_song GET        /admin/songs/new(.:format)                        {:action=>"new", :controller=>"admin/songs"}
+                  edit_admin_song GET        /admin/songs/:id/edit(.:format)                   {:action=>"edit", :controller=>"admin/songs"}
+                       admin_song GET        /admin/songs/:id(.:format)                        {:action=>"show", :controller=>"admin/songs"}
+                                  PUT        /admin/songs/:id(.:format)                        {:action=>"update", :controller=>"admin/songs"}
+                                  DELETE     /admin/songs/:id(.:format)                        {:action=>"destroy", :controller=>"admin/songs"}
+                   admin_comments GET        /admin/comments(.:format)                         {:action=>"index", :controller=>"admin/comments"}
+                                  POST       /admin/comments(.:format)                         {:action=>"create", :controller=>"admin/comments"}
+                new_admin_comment GET        /admin/comments/new(.:format)                     {:action=>"new", :controller=>"admin/comments"}
+               edit_admin_comment GET        /admin/comments/:id/edit(.:format)                {:action=>"edit", :controller=>"admin/comments"}
+                    admin_comment GET        /admin/comments/:id(.:format)                     {:action=>"show", :controller=>"admin/comments"}
+                                  PUT        /admin/comments/:id(.:format)                     {:action=>"update", :controller=>"admin/comments"}
+                                  DELETE     /admin/comments/:id(.:format)                     {:action=>"destroy", :controller=>"admin/comments"}
+                            login            /login(.:format)                                  {:controller=>"devise/sessions", :action=>"new"}
+                                             /auth/:provider/callback(.:format)                {:controller=>"devise/sessions", :action=>"create"}
+                           logout            /logout(.:format)                                 {:controller=>"devise/sessions", :action=>"destroy"}
+                                             /users/sign_in.json(.:format)                     {:controller=>"sessions", :action=>"create"}
+            new_user_registration            /register(.:format)                               {:controller=>"devise/registrations", :action=>"new"}
+                 new_user_session GET        /admin/login(.:format)                            {:action=>"new", :controller=>"sessions"}
+                     user_session POST       /admin/login(.:format)                            {:action=>"create", :controller=>"sessions"}
+             destroy_user_session DELETE|GET /admin/logout(.:format)                           {:action=>"destroy", :controller=>"sessions"}
+           user_omniauth_callback            /admin/auth/:action/callback(.:format)            {:action=>/facebook|twitter|google/, :controller=>"users/omniauth_callbacks"}
+                    user_password POST       /admin/password(.:format)                         {:action=>"create", :controller=>"devise/passwords"}
+                new_user_password GET        /admin/password/new(.:format)                     {:action=>"new", :controller=>"devise/passwords"}
+               edit_user_password GET        /admin/password/edit(.:format)                    {:action=>"edit", :controller=>"devise/passwords"}
+                                  PUT        /admin/password(.:format)                         {:action=>"update", :controller=>"devise/passwords"}
+                    song_uploader            /song_uploader(.:format)                          {:controller=>"main", :action=>"song_uploader"}
+                        next_song            /next_song(.:format)                              {:controller=>"main", :action=>"next_song"}
+                    previous_song            /previous_song(.:format)                          {:controller=>"main", :action=>"previous_song"}
+                next_song_paneled            /next_song_paneled(.:format)                      {:controller=>"main", :action=>"next_song"}
+            previous_song_paneled            /previous_song_paneled(.:format)                  {:controller=>"main", :action=>"previous_song"}
+                                             /get_album_art/:id(.:format)                      {:controller=>"main", :action=>"get_album_art"}
+                      share_audio            /share_audio(.:format)                            {:controller=>"main", :action=>"share_audio"}
+                   favorite_track            /favorite_track(.:format)                         {:controller=>"main", :action=>"favorite_track"}
+                        fan_track            /fan_track(.:format)                              {:controller=>"main", :action=>"fan_track"}
+                          rate_it            /rate_it(.:format)                                {:controller=>"main", :action=>"rate_it"}
+                         heard_it            /heard_it(.:format)                               {:controller=>"main", :action=>"heard_it"}
+                     havent_heard            /havent_heard(.:format)                           {:controller=>"main", :action=>"havent_heard"}
+                   download_track            /download_track(.:format)                         {:controller=>"main", :action=>"download_track"}
+                    not_logged_in            /not_logged_in(.:format)                          {:controller=>"main", :action=>"not_logged_in"}
+                                             /playlist/:playlist/track/:song_id(.:format)      {:controller=>"main", :action=>"track"}
+                   chart_comments            /chart_comments(.:format)                         {:controller=>"main", :action=>"chart_comments"}
+                     upload_songs            /upload_songs(.:format)                           {:controller=>"main", :action=>"upload_songs"}
+                       my_profile            /my_profile(.:format)                             {:controller=>"main", :action=>"profile_page"}
+                            radio            /radio(.:format)                                  {:controller=>"main", :action=>"radio"}
+                            parse            /parse(.:format)                                  {:controller=>"main", :action=>"parse"}
+                             root            /                                                 {:controller=>"main", :action=>"index"}

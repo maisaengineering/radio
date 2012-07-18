@@ -1,0 +1,31 @@
+
+<%= stylesheet_link_tag "upload_songs" %>
+
+<form id="song_form">
+<input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"></input>
+<div id="mid_of_record_hole_copy"></div>
+
+<div id="background_copy_2"></div>
+<div id="logo_upload_songs"></div>
+<div id="sharing_caring"></div>
+<div id="upload_text"><input id="song-link" style="padding-left:13px;" name="link" type="text" /></div>
+<div id="song_title"><input id="song-title" style="padding-left:129px;" type="text" name="title" /></div>
+<div id="artist"><input id="song-artist" style="padding-left:84px;" type="text" name="artist" /></div>
+<div id="genre_s"><input id="song-genres" style="padding-left:108px;" type="text" name="genres" /></div>
+<div id="next_thingy_upload_songs"></div>
+<div id="download_permission"></div>
+<div id="download_permission_no" onclick="change_download_permission('no')"></div>
+<div id="download_permission_yes" onclick="change_download_permission('yes')"></div>
+<div id="yup_download_permission"></div>
+<div id="wait_for_mp3"></div>
+<div id="processing_dots"></div>
+<div id="wait_for_youtube"></div>
+<div id="select_file"></div>
+<p id="select_file_text"></p>
+<div id="blank_torn_paper"></div>
+<div id="close_button"></div>
+<div id="background_upload"></div>
+<div class="hider">
+<input id="song-file" type="file" name="song[audio]" />
+</div>
+</form>

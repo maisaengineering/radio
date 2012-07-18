@@ -1,0 +1,108 @@
+// Active Admin CSS Styles
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// To customize the Active Admin interfaces, add your
+// styles here:
+@import "jquery-ui-1.8.18.custom.css";
+
+#main_content form {
+  padding: 15px;
+  margin:10px 25px 30px 10px;
+  background-color:#FBFBFB;
+  border:1px solid #999;
+  border-radius:15px;
+}
+
+#main_content form > input[type="submit"]{
+  margin: 10px;
+}
+
+/* player container */
+div#hidden_player {
+  height: 1px;
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  z-index: -1;
+  div#jplayer_container {
+  	height:150px;
+  	width:150px;
+  	#tube_player object {
+  		max-height:120px;
+  		max-width:120px;
+  	}
+  }
+
+}
+
+/* search and song results */
+#search_container {
+  padding: 15px;
+  margin:10px 25px 0 10px;
+  background-color:#FBFBFB;
+  border:1px solid #999;
+  border-radius:15px;
+  #search_results .song {
+    border:1px solid #999;
+    border-radius:15px;
+    margin: 5px;
+    padding: 5px 10px;
+    min-height:145px;
+    .player button {
+      border: 1px solid #999999;
+      border-radius: 15px 0 0 15px;
+      float: left;
+      height: 25px;
+      left: -61px;
+      padding-bottom: 2px;
+      position: absolute;
+      top: 10px;
+      box-shadow: -5px 1px 8px -3px;
+    }
+    .album_art {
+      float:left;
+      margin:10px;
+      position:relative;
+      img {
+        max-width:150px;
+        min-height:90px;
+      }
+    }
+    .album_art_form form {
+      border: none;
+      display: inline-block;
+      margin: 0 10px;
+      padding: 1px 5px;
+      input[type="submit"] {
+        margin:2px;
+      }
+    }
+    .playlists {
+      padding-left:10px;
+      span {
+        background-color:#F9ECA6;
+        border:1px solid #7A621C;
+        padding: 5px 2px 3px 5px;
+        border-radius:5px;
+        margin:5px;
+      }
+    }
+    .add_to_playlist {
+      margin:5px;
+    }
+    .stats {
+      float:right;
+      div {
+        border:1px solid #999;
+        padding: 3px;
+        border-radius:3px;
+        margin:5px;
+      }
+      button.nuke {
+        margin:10px 20px;
+      }
+    }
+  }
+}
+

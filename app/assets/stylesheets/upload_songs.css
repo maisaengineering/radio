@@ -1,0 +1,152 @@
+
+#background_upload
+{
+        background-image: url("background_upload.png");
+        position: relative;
+        background-repeat:no-repeat;
+        margin-top: -1107px;
+        left: 0%;
+        width: auto;
+        height:850px;
+        z-index: 2 !important;
+}
+
+ #blank_torn_paper
+{
+        background-image: url("background_torn_paper.png");
+        position: absolute;
+        top: 0px;
+        left: 12%;
+        width: 638px;
+        height: 770px;
+        z-index: 5 !important;
+}
+
+ #background_copy_2
+{
+        background-image: url("background_copy_2.png");
+        position: absolute;
+        top: 190px;
+        left: 26%;
+        width: 369px;
+        height: 366px;
+        z-index: 3 !important;
+}
+
+ #mid_of_record_hole_copy
+{
+        background-image: url("mid_of_record_hole_copy.png");
+        position: absolute;
+        top: 350px;
+        left: 40%;
+        width: 36px;
+        height: 38px;
+        z-index: 4 !important;
+}
+
+ #next_thingy_upload_songs
+{
+        background-image: url("next_thingy_upload_songs.png");
+        position: absolute;
+        top: 459px;
+        left: 38%;
+        width: 86px;
+        height: 46px;
+        z-index: 9 !important;
+}
+
+ #logo_upload_songs
+{
+        background-image: url("logo_upload_songs.png");
+        position: absolute;
+        top: 24px;
+        left: 54%;
+        width: 146px;
+        height: 59px;
+        z-index: 6 !important;
+}
+
+ #sharing_caring
+{
+        background-image: url("sharing_caring.png");
+        position: absolute;
+        top: 82px;
+        left: 32%;
+        width: 228px;
+        height: 21px;
+        z-index: 7 !important;
+}
+
+ #artist
+{
+        background-image: url("artist.png");
+        position: absolute;
+        top: 325px;
+        left: 22%;
+        width: 77px;
+        height: 17px;
+        z-index: 8 !important;
+}
+
+ #song_title
+{
+        background-image: url("song_title.png");
+        position: absolute;
+        top: 263px;
+        left: 22%;
+        width: 124px;
+        height: 18px;
+        z-index: 10 !important;
+}
+
+ #genre_s
+{
+        background-image: url("genre_s.png");
+        position: absolute;
+        top: 382px;
+        left: 22%;
+        width: 102px;
+        height: 21px;
+        z-index: 11 !important;
+}
+
+ #upload_text
+{
+        background-image: url("upload_text.png");
+        position: absolute;
+        top: 145px;
+        left: 22%;
+        width: 251px;
+        height: 76px;
+        z-index: 12 !important;
+}
+
+ #select_file
+{
+        background-image: url("select_file.png");
+        position: absolute;
+        top: 142px;
+        left: 36%;
+        width: 63px;
+        height: 23px;
+        z-index: 13 !important;
+}
+
+ #close_button
+{
+        background-image: url("close_button.png");
+        position: absolute;
+        top: 8px;
+        left: 75.2%;
+        width: 16px;
+        height: 16px;
+        z-index: 14 !important;
+}
+
+
+#song-link {
+  left:85%;
+  position:relative;
+  top:58px;
+}
+

@@ -1,0 +1,37 @@
+<% case @activity.class.name %>
+  <% when 'Song' %>
+    <span style="color: #600;font-weight: bold;">
+      <%= @activity.uploader %>
+    </span>
+    <span>
+      shared
+    </span>
+    <span style="color: #211010;font-style: italic;font-variant: small-caps;">
+      <%= @activity.title %>
+    </span>
+    <span>by</span>
+    <span style="color: #20232F;font-variant: small-caps;font-weight: bold;">
+      <%= @activity.artist.name %>
+    </span>
+  <% when 'Comment'%>
+    <b><span style="color: #600;font-weight: bold;">
+   	  <%=(@activity.user.username ? @activity.user.username : @activity.user.email) %>
+    </span>
+    <span> commented: </span>
+    <span>
+      <%= @activity.comment %>
+    </span></b>
+  <% when 'Favorite'%>
+    <b><span style="color: #600;font-weight: bold;">
+   	  <%=(@activity.user.username ? @activity.user.username : @activity.user.email) %>
+    </span>
+    <span> added </span>
+    <span style="color: #211010;font-style: italic;font-variant: small-caps;font-weight: bold;">
+      <%=@activity.song.title%>
+    </span>
+    <span>to</span>
+    <span style="color: #CD404D;font-weight: bold;"> FAVORITES. </span></b>
+<% end %><br /><br />
+<% @comments.each_with_index do |com,index|%>
+  <span style="color: #600;font-weight: bold;"><%=(com.user.username ? com.user.username : com.user.email) %></span><span> : </span><%= com.activity_comment %><br />
+<%end%>

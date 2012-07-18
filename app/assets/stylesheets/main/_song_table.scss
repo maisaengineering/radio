@@ -1,0 +1,100 @@
+.song_table {
+  /*background-image: url("song_table_bg.png");*/
+  height: 267px;
+  margin: auto;
+  padding: 88px 32px 15px;
+  width: 686px;
+  position:relative;
+}
+
+.song_table > .player_widget {
+  /*background-image: url(player_widget_play.png);*/
+  width:45px;
+  height:45px;
+  position:absolute;
+  top:94px;
+  left:31px;
+  opacity:0.6;
+}
+
+.song_table > .bottom_panel {
+  bottom: 12px;
+  height: 30px;
+  position: absolute;
+  width: 636px;
+  margin-left:48px;
+}
+
+.song_table > .bottom_panel > .now_playing {
+  float: left;
+  font-family: "Courier",Courier,serif;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  margin-left: 120px;
+  overflow: hidden;
+  width: 312px;
+}
+
+.song_table > .bottom_panel > .vol_control {
+  float: left;
+  line-height: 1.8em;
+}
+
+.song_table > table {
+  height: 234px;
+  margin-left: 70px;
+  width: 613px;
+  list-style-type:none;
+  padding-left:0px;
+  margin-top:1px;
+}
+
+.song_table tr {
+  vertical-align:top;
+}
+
+.song_table td div {
+  line-height:1.4em;
+  max-height:42px;
+  overflow:hidden;
+  text-align:center;
+  font-variant:small-caps;
+}
+
+.song_table .title {
+  font-family:"Courier", Courier, serif;
+  font-weight:bold;
+  font-style:italic;
+}
+
+.song_table .artist {
+  font-family: Impact;
+  font-style:italic;
+  
+}
+
+.song_table .rating {
+  font-family:"Courier", Courier, serif;
+  font-weight:bold;
+  font-style:italic;
+}
+
+.song_table .genre {
+  font-family:"Courier", Courier, serif;
+  font-weight:bold;
+  font-style:italic;
+}
+
+.song_table .referrer {
+  font-family: Impact;
+  font-style:italic;
+}
+
+/*
+Impact 5.84 for users. italics, bevel, emboss
+Artist name:  Impact font. 6.97. Italics, small Cap
+  Setting.  Outer glow, bevel emboss, stroke.
+
+SONG Titles: COURIER(TT) font. 7.37. Bold, italics,
+  small cap setting. Bevel and emboss.
+*/

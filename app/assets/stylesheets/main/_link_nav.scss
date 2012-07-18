@@ -1,0 +1,26 @@
+.link_nav {
+  text-align:center;
+  position:relative;
+}
+
+.link_nav a {
+  border:none;
+  position:relative;
+  margin:auto 9px;
+}
+
+.link_nav img {
+  border:none;
+}
+
+.link_nav a:nth-child(2) {
+  top:20px;
+}
+
+.link_nav a:nth-child(3) {
+  top:55px;
+}
+
+.link_nav a:nth-child(4) {
+  top:20px;
+}

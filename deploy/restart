@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "starting Passenger app"
+#passenger start -p9046 -d -e production
+touch tmp/restart.txt
+echo "done"

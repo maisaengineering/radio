@@ -1,0 +1,37 @@
+<%= stylesheet_link_tag "upload_songs" %>
+<%= stylesheet_link_tag "comments" %>
+
+<div id="comment_box_on_activity_page">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"></input>
+  <input type="text" name="comment[comment]" id="comment_text_on_activity_page" style="position: absolute; left: 85px; top: 10px; width: 278px;"/></input>
+  
+</div>
+<div id="yup_on_holler_on_activity_page"></div>
+
+
+<div id="close_button"></div>
+<div id="background_comment"></div>
+<div id="activity_chart"></div>
+<div id="mid_of_record_hole_activity"></div>
+<div id="background_copy_activity" style="background-image : url('<%=@song.album.art.url%>')"></div>
+<div class="song_activities">
+  <%= render "activities"%>
+</div>
+<% unless @more_flag == true%>
+  <div id="more_on_recent_activities"></div>
+<%end%>
+<div id="prev_on_recent_activities"></div>
+<div id="next_on_recent_activities"></div>
+<input type="hidden" id="song_id" value="<%=@song.id%>">
+<input type="hidden" id="count" value="1">
+<div class="comment_on_activity_popup">
+  <div id="close_popup_button"></div>
+  <div id="older_activity_comments"></div>
+  <div id="comment_box_on_activity_popup">
+    <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"></input>
+    <input id="activity_class" type="hidden"></value>
+    <input id="activity_id" type="hidden"></value>
+    <input type="text" name="comment[comment]" id="comment_text_on_activity_popup" style="position: absolute; left: 85px; top: 8px; width: 286px;"/></input>
+  </div>
+  <div id="yup_on_holler_on_activity_popup"></div>
+</div>

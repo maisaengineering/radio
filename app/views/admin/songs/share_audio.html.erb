@@ -1,0 +1,12 @@
+<script type="text/javascript">
+  var rails_env = '<%= Rails.env %>';
+</script>
+<h1>Share Links To Music That You Love</h1>
+
+<%= form_tag add_links_admin_songs_url do %>
+
+<p><%= text_area :links, '' %></p>
+
+<p><%= submit_tag 'Send Links!!' %></p>
+
+<% end %>

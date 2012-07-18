@@ -1,0 +1,82 @@
+<div class="song" id="song_<%= song.id %>">
+  <%= hidden_field_tag :song_id, song.id %>
+  <div class="album_art">
+    <%= image_tag song.album.art.url rescue "<no album art>" %>
+    <div class="player">
+      <%= hidden_field_tag :song_source, song.media_source_name %>
+      <%= hidden_field_tag :song_url, song.media_source_url %>
+      <button class="play_pause">Play</button>
+    </div>
+  </div>
+  <div class="stats">
+    <div>Play Count <%= song.play_count %></div>
+    <div>Listened <%= song.heard_its.count %></div>
+    <div>Downloaded <%= song.download_count.to_i %></div>
+    <div>Favorited <%= song.favorites.count %></div>
+    <div>Shared <%= song.share_count.to_i %></div>
+		<button class="nuke">Nuke!</button>
+  </div>
+  <div class="source"><%= song.media_source_name %> #<%= song.id %></div>
+  <div class="url"><%= link_to song.media_source_url, song.media_source_url %></div>
+  <hr>
+  <div class="title">
+    <label>Title:</label>
+    <span><%= song.title rescue "<no song title>" %></span>
+    <input style="display:none" value="<%= song.title rescue "" %>"></input>
+    <%= button_tag "Edit", :class=>:edit %>
+    <%= button_tag "Save", :class=>:save, :style=>"display:none" %>
+    <%= button_tag "Cancel", :class=>:cancel, :style=>"display:none" %>
+  </div>
+  <div class="artist">
+    <label>Artist:</label>
+    <span><%= song.artist.name rescue "<no artist name>" %></span>
+    <input style="display:none" value="<%= song.artist.name rescue ""%>"></input>
+    <%= button_tag 'Edit', :class=>:edit %>
+    <%= button_tag "Save", :class=>:save, :style=>"display:none" %>
+    <%= button_tag "Cancel", :class=>:cancel, :style=>"display:none" %>
+  </div>
+  <div class="album_title">
+    <label>Album Title:</label>
+    <span><%= album.title rescue "<no album title>" %></span>
+    <input style="display:none" value="<%= album.title rescue "" %>"></input>
+    <%= button_tag "Edit", :class=>:edit %>
+    <%= button_tag "Save", :class=>:save, :style=>"display:none" %>
+    <%= button_tag "Cancel", :class=>:cancel, :style=>"display:none" %>
+  </div>
+  <div class="playlist">
+    <label>Playlist(s):</label>
+    <div class="playlists">
+      <% song.playlists.each do |p| %>
+        <span id="playlist_<%= p.id %>">
+          <%= p.name %>
+          <%= hidden_field_tag :playlist_id, p.id %>
+          <%= button_tag 'Remove', :class=>:remove %>
+        </span>
+      <% end %>
+    </div>
+    <div class="add_to_playlist">
+      <%= select_tag :playlists, options_for_select(Playlist.all.collect{|p|[p.name, p.id]}) %>
+      <%= button_tag "Add", :class=>:add %>
+    </div>
+	  <div style="clear:both"></div>
+    <%#if song.album.nil? || song.album.art_file_name.nil? %>
+      <div class="album_art_form">
+        <%= form_tag(upload_album_art_admin_song_path(song), :multipart=>true) do %>
+          <%= label_tag :art, "Upload Album Art: " %>
+          <%= file_field_tag :art, :multipart=>true %>
+          <%= submit_tag 'Upload'%>
+        <% end %>
+      </div>
+    <%#end%> 
+    <%if !song.comments.blank? %>
+      <br /><br /><label><b>Comment(s):</b></label><br />
+      <div id="song_<%=song.id%>">
+        <% song.comments.each do |com|%>
+          <div id="comment_<%=com.id%>" style ="padding-left: 15px;padding-top: 5px;padding-bottom: 5px;">
+            <%=com.comment%><button class="nuke_comment" id="<%=com.id%>" style="margin-left: 5px;">Nuke!</button>
+          </div>
+        <% end %>
+      </div>
+    <%end%>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+<script type="text/javascript">
+  var rails_env = '<%= Rails.env %>';
+</script>
+<h1>Playlist Tool</h1>
+
+
+<%= form_tag(create_playlist_admin_playlists_path, :multipart => true) do %>
+<h2>Create Admin Site-Wide Playlist</h2>
+<p>
+<label>Playlist Name:</label> <%= text_field_tag 'playlist[name]' %>
+</p>
+<p>
+<label>Station Name Image:</label> <%= file_field_tag 'playlist[station_name_image]' %>
+</p>
+<p>
+<label>Magic:</label> <%= check_box_tag 'playlist[special]' %>
+<p>Magic uses the name and must have a custom code hook.</p>
+<p>Magic playlists: <%= @special_playlists.collect {|p| p.name}.join(", ") %></p>
+</p>
+<%= submit_tag 'create' %>
+
+<% end %>
+
+
+
+<%= form_tag(add_to_playlist_admin_playlists_path) do %>
+
+<h2>All Songs</h2>
+<%= select_tag(:song_ids, options_from_collection_for_select(@all_songs, "id", "title"),  {:multiple => true, :style => "width: 1000px; height: 400px;"}) %>
+<p>
+<label>Playlist: </label><%= select_tag :playlist, options_from_collection_for_select(@god_like_playlists, "id", "name") %>
+
+<%= submit_tag 'add' %>
+</p>
+
+<% end %>
+
+<%= form_tag(add_to_playlist_admin_playlists_path) do %>
+
+<h2>Unplaylisted Songs</h2>
+<%= select_tag(:song_ids, options_from_collection_for_select(@unplaylisted_songs, "id", "title"),  {:multiple => true, :style => "width: 1000px; height: 400px;"}) %>
+<p>
+<label>Playlist: </label><%= select_tag :playlist, options_from_collection_for_select(@god_like_playlists, "id", "name") %>
+
+<%= submit_tag 'add' %>
+</p>
+
+<% end %>
+
+
+<h1>All Admin Playlists</h1>
+
+
+<% @god_like_playlists.each do |god| %>
+
+	<%= form_tag(remove_songs_admin_playlists_path, :multipart => true) do %>
+
+	<p>
+
+	<h1><%= god.name %></h1>
+
+		<%= select_tag "playlist[#{god.id}][songs]", options_from_collection_for_select(god.songs, "id", "title"), :multiple => true, :style => "width: 1000px; height: 400px;", :onchange => "$('.#{god.name.downcase.gsub(' ', '_')}').val($(this).val())" %>
+
+	</p>
+
+	<%= submit_tag 'remove songs' %>
+
+	<% end %>
+
+	<br />
+
+	<%= link_to "Reorder Playlist", sort_playlist_admin_playlist_path(god) %>
+
+  <%= form_tag(change_playlist_image_admin_playlist_path(god.id), :multipart => true) do %>
+  <h2>Change Image for <%= god.name %></h2>
+  <p>
+  <label>Station Name Image:</label> <%= file_field_tag 'playlist[station_name_image]' %>
+  </p>
+  <%= submit_tag 'update' %>
+
+  <% end %>
+
+<% end %>
+

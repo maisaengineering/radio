@@ -1,0 +1,227 @@
+.chooseable-art{
+width:80px;
+height:80px;
+margin-top:-5px;
+}
+#chosen_art
+{
+position: absolute;
+left:321px;
+top:232px;
+}
+
+#chosen_art_left
+{
+position: absolute;
+left:136px;
+top:335px;
+}
+
+#chosen_art_right
+{
+position: absolute;
+left:695px;
+top:335px;
+}
+
+#chosen_img {
+        display: none;
+		margin-left:-50px;
+}
+
+#chosen_img_left {
+        display: none;
+		margin-left:-50px;
+}
+
+#chosen_img_right {
+        display: none;
+		margin-left:0px;
+}
+
+#ref_comment {
+background: none;
+border-bottom: 1px solid black;
+margin-top: 650px;
+height: 68px;
+width: 499px;
+margin-left: -102px;
+}
+
+#ref-holder {
+position: absolute;
+left:342px;
+top:0px;
+z-index: 5;
+}
+
+
+
+#background_tag_songs
+{
+        background-image: url("background_shareatrack2.png")!important;
+        position: relative;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin-top:0px;
+        width: 923px;
+        height: 875px;
+        z-index: 2 !important;
+}
+
+ #blank_torn_paper_2
+{
+        background-image: url("torn_paper_shareatrack2.png");
+        position: absolute;
+	top: 0px;
+	left: -15px;
+	width: 800px;
+	height: 771px;
+	z-index: 4 !important;
+}
+
+ #lastly_text
+{
+        background-image: url("lastly_text.png");
+        position: absolute;
+        top: 930px;
+        left: 250px;
+        width: 490px;
+        height: 469px;
+        z-index: 5 !important;
+}
+
+ #background_5
+{
+        position: absolute;
+        top: 510px;
+        left: 562px;
+        width: 90px;
+        height: 69px;
+        z-index: 8 !important;
+}
+
+ #background_4
+{
+        position: absolute;
+        top: 510px;
+        left: 348px;
+        width: 90px;
+        height: 67px;
+        z-index: 9 !important;
+}
+
+ #background_3
+{
+        position: absolute;
+        top: 510px;
+        left: 454px;
+        width: 90px;
+        height: 67px;
+        z-index: 10 !important;
+}
+
+ #logo_tag_songs
+{
+        background-image: url("logo_tag_songs.png");
+        position: absolute;
+        top: 800px;
+        left: 580px;
+        width: 158px;
+        height: 66px;
+        z-index: 6 !important;
+}
+
+ #almost_there
+{
+        background-image: url("almost_there.png");
+        position: absolute;
+        top: 862px;
+        left: 370px;
+        width: 182px;
+        height: 23px;
+        z-index: 7 !important;
+}
+
+ #background_2
+{
+        position: absolute;
+        top: 510px;
+        left: 670px;
+        width: 72px;
+        height: 75px;
+        z-index: 11 !important;
+}
+
+ #background_1
+{
+        position: absolute;
+        top: 510px;
+        left: 241px;
+        width: 90px;
+        height: 72px;
+        z-index: 12 !important;
+}
+
+ #explain_text
+{
+        background-image: url("explain_text.png");
+        position: absolute;
+        top: 1067px;
+        left: 227px;
+        width: 503px;
+        height: 185px;
+        z-index: 13 !important;
+}
+
+ #mid_of_record_hole
+{
+        background-image: url("mid_of_record_hole.png");
+        position: absolute;
+        top: 400px;
+        left: 450px;
+        width: 42px;
+        height: 39px;
+        z-index: 3 !important;
+}
+
+ #select_album_art_button
+{
+        background-image: url("select_album_art_button.png");
+        position: absolute;
+        top: 383px;
+        left: 488px;
+        width: 61px;
+        height: 21px;
+        z-index: 14 !important;
+}
+
+ #tag_songs_top_desc
+{
+        background-image: url("tag_songs_top_desc.png");
+        position: absolute;
+        top: 925px;
+        left: 243px;
+        width: 488px;
+        height: 49px;
+        z-index: 15 !important;
+}
+
+ #done_button_tag_songs
+{
+        background-image: url("done_button_tag_songs.png");
+        position: absolute;
+        top: 730px;
+        left: 424px;
+        width: 78px;
+        height: 40px;
+        z-index: 16 !important;
+}
+
+#images {
+position: absolute;
+left:374px;
+top:232px;
+z-index: 50 !important;
+}
+
